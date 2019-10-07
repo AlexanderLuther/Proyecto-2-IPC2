@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-muted">
+                <a class="navbar-brand" href="/SistemaWebDeRevistas/jsp/frontend-editor.jsp">GT MAGAZINE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SistemaWebDeRevistas/jsp/nueva-publicacion.jsp">Nueva Publicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SistemaWebDeRevistas/jsp/agregar-revista.jsp">Agregar Revista</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Reportes
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal">Reporte de Comentarios</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal">Reporte de Suscripciones</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal">Reporte de Revistas mas gustadas</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal">Reporte de Ganancias</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="/SistemaWebDeRevistas/jsp/ControladorPerfil"> <c:out value="${usuario}"></c:out> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SistemaWebDeRevistas/ControladorCerrarSesion">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>

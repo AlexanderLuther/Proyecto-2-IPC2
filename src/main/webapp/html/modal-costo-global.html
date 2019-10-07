@@ -1,0 +1,25 @@
+<div class="modal fade" id="costoGlobal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center> <h2 class="etiquetaBlanca">Establecer Costo Global</h2> </center>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/SistemaWebDeRevistas/ControladorCostoGlobal" method="POST">
+                    <div class="modal-body"> 
+                        <div class="form-group">
+                            <label class="campoObligatorio"> * </label>
+                            <label class="etiquetaBlanca" for="costoGlobal">Costo Global</label>
+                            <input type="number" step="0.01" class="form-control" id="costoGlobal" name="costoGlobal" placeholder="Ingresar el nuevo valor del costo global" required>
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-secondary">Aceptar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    

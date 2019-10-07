@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+footer {
+  align-self: flex-end;
+  background-color: black;
+  line-height: 2;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1em; 
+}
+
+.fondoAdministrador{
+    background-image: url("../images/fondoAdmin.jpg");
+}
+
+.fondoEditor{
+    background-image: url("../images/fondoEditor.jpg");
+}
+
+.fondoSuscriptor{
+    background-image: url("../images/fondoSuscriptor.jpg");
+}
+
+.fondoPrincipal{
+    background-image: url("../images/fondoPrincipal.jpg");
+}
+
+.campoObligatorio{
+    color: red;
+}
+
+.etiquetaBlanca{
+    color: white;
+}
+
+.modal-content{
+    background-color: cadetblue;
+}
+
+.etiquetaInstruccion{
+    color: white;
+    font-size: small;
+}

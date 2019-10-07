@@ -1,0 +1,75 @@
+<div class="modal fade" id="crearAdministrador" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center> <h2 class="etiquetaBlanca">Registrar nuevo Administrador</h2> </center>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="/SistemaWebDeRevistas/ControladorUsuario" method="POST" enctype="multipart/form-data">
+                    <div class="modal-body">     
+                        <!--DATOS USUARIO -->
+                        <center><h2 class="etiquetaBlanca"> Detalles de la cuenta </h2></center>
+                        <div class="form-group">
+                            <label class="campoObligatorio"> * </label>
+                            <label for="nombreUsuario" class="etiquetaBlanca">Nombre de Usuario</label>
+                            <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Ingresar nombre de usuario" maxlength="50" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="campoObligatorio"> * </label>
+                            <label for="contrasena" class="etiquetaBlanca">Contrasena</label>
+                            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingresar contrasena" maxlength="50" required>
+                        </div>
+                        <div>
+                            <label class="campoObligatorio"> * </label>
+                            <label for="tipoUsuario" class="etiquetaBlanca">Tipo de Usuario</label>   
+                            <select class="custom-select custom-select-sm" id="tipoUsuario" name="tipoUsuario" required> 
+                                <option value="" disabled selected> Seleccione un tipo de usuario </option>
+                                <option value="1" > Administrador </option>
+                            </select> 
+                        </div>
+                        <br> <br>
+                    
+                    <!--DATOS PERFIL -->
+                        <center><h2 class="etiquetaBlanca"> Detalles del perfil </h2></center>
+                        <div class="form-group">
+                            <label class="campoObligatorio"> * </label>
+                            <label for="nombre" class="etiquetaBlanca">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresar nombre" maxlength="50" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="campoObligatorio"> * </label>
+                            <label for="apellido" class="etiquetaBlanca">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingresar apellido" maxlength="50" required>
+                        </div> 
+                         <div class="form-group">
+                        <label for="hobbies" class="etiquetaBlanca">Foto de Perfil</label> <br>
+                        <input type="file" class="etiquetaBlanca" name="fotoPerfil" accept="image/*"> <br>
+                        </div>
+                        <div class="form-group">
+                        <label for="hobbies" class="etiquetaBlanca">Hobbies</label>
+                        <textarea class="form-control" aria-label="With textarea" id="hobbies" name="hobbies" placeholder="Ingresar hobbies"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="temasInters" class="etiquetaBlanca">Temas de Interes</label>
+                         <textarea class="form-control" aria-label="With textarea" id="temasInteres" name="temasInteres" placeholder="Ingresar temas de interes"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion" class="etiquetaBlanca">Descripcion</label>
+                        <textarea class="form-control" aria-label="With textarea" id="descripcion" name="descripcion" placeholder="Ingresar descripcion"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="gustos" class="etiquetaBlanca">Gustos</label>
+                         <textarea class="form-control" aria-label="With textarea" id="gustos" name="gustos" placeholder="Ingresar gustos"></textarea>
+                    </div>  
+                    <div> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-success">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
